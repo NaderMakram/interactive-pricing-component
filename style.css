@@ -59,6 +59,10 @@
   color: var(--grayish-blue);
 }
 
+.visually-hidden{
+  display: none;
+}
+
 
 /* background */
 body{
