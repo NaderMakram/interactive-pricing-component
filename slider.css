@@ -1,0 +1,89 @@
+/* slider is the div container */
+/* input is the range input */
+
+:root{
+  /* Full Slider Bar */
+  --soft-cyan: hsl(174, 77%, 80%);
+   /* Empty Slider Bar */
+   --light-grayish-blue-slider: hsl(224, 65%, 95%);
+  /* Slider thumb Backround */
+  --strong-cyan: hsl(174, 86%, 45%);
+}
+
+.slider-container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 8px;
+  /* border: 1px solid red; */
+  border-radius: 50px;
+  /* background: transparent; */
+
+}
+
+/* chrome */
+.slider input{
+  appearance: none;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  padding-left: 20%;
+
+  background: transparent;
+  outline: none;
+  z-index: 5;
+}
+.slider input::-webkit-slider-runnable-track{
+  appearance: none;
+  background: transparent;
+}
+.slider input::-webkit-slider-thumb{
+  appearance: none;
+  width: 0.65rem;
+  height: 0.65rem;
+  padding: 1rem;
+  border-radius: 80px;
+  background:url(./images/icon-slider.svg)no-repeat center center/1rem , var(--strong-cyan);
+  box-shadow: 0 0.7rem 1rem 0.5rem rgba(16, 213, 194, 0.3);
+}
+
+/* firefox */
+.slider input::-moz-range-thumb{
+  appearance: none;
+  width: 0.2rem;
+  height: 0.2rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 80px;
+  background:url(./images/icon-slider.svg)no-repeat center center/1rem , var(--strong-cyan);
+  box-shadow: 0 0.7rem 1rem 0.5rem rgba(16, 213, 194, 0.3);
+}
+
+
+.slider .fill{
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  width: 100px;
+  height: 60%;
+  background: var(--soft-cyan);
+  border-radius: 10px;
+}
+
+.slider .empty{
+  position: absolute;
+  right: 0;
+  z-index: 2;
+  width: 100%;
+  height: 60%;
+  background: var(--light-grayish-blue-slider);
+  border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 600px){
+
+}

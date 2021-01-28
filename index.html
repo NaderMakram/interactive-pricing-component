@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./slider.css">
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="container flex-col">
+
+      <div class="header">
+        <h2 class="main-header main-text">Simple, traffic-based pricing</h2>
+        <h5 class="second-header second-text">Sign-up for our 30-day trial. No credit card required.</h5>
+      </div>
+
+      <div class="card flex-col">
+        <div class="card-top flex-col">
+          <!-- pricing -->
+          <div class="pricing flex-row">
+            <p class="page-views"><span id="amount">100k</span>PAGEVIEWS</p>
+            <p class="flex-row"><span class="price-font">$</span><span class="price-font" id="price">16.00</span>/month
+            </p>
+          </div>
+          <!-- slider -->
+          <div class="slider">
+            <div class="slider-container">
+              <input id="range" type="range" min="0" max="4" step="1" value="2">
+              <span class="fill"></span>
+              <span class="empty"></span>
+            </div>
+          </div>
+          <!-- billing -->
+          <div class="billing-rate flex-row">
+            <p>Monthly Billing</p>
+            <input type="checkbox" class="toggle" id="discount">
+            <p>Yearly Billing</p>
+            <div class="discount-tag flex-row web">25% discount</div>
+            <div class="discount-tag flex-row mobile">-25%</div>
+          </div>
+        </div>
+        <div class="card-bottom flex-row">
+          <div class="info flex-col">
+            <p><img class="check" src="./images/icon-check.svg" alt="check">Unlimited websites</p>
+            <p><img class="check" src="./images/icon-check.svg" alt="check">100% data ownership</p>
+            <p><img class="check" src="./images/icon-check.svg" alt="check">Email reports</p>
+          </div>
+          <button class="start-btn">Start my trial</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+
+</html>
+
+<!-- Simple, traffic-based pricing
+  Sign-up for our 30-day trial. No credit card required.
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+  Unlimited websites
+  100% data ownership
+  Email reports
+
+  Start my trial -->
