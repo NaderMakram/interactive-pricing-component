@@ -75,7 +75,7 @@ body{
 }
 
 .container{
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 100%;
   height: 90%;
 }
@@ -84,7 +84,7 @@ body{
   background: url(./images/pattern-circles.svg)no-repeat center center;
   background-size: contain;
   padding: 2rem 3rem;
-  margin: auto;
+  margin: 3rem;
 }
 
 .header .main-header{
@@ -262,6 +262,7 @@ body{
   .header{
     width: 90vw;
     padding: 2rem 1.3rem;
+    margin: 2rem;
   }
   .header .main-header{
     font-size: 1.3rem;
