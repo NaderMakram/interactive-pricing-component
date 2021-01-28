@@ -34,7 +34,7 @@
           <!-- slider -->
           <div class="slider">
             <div class="slider-container">
-              <input id="range" type="range" min="0" max="4" step="1" value="2">
+              <input id="range" type="range" min="0" max="4" step="1" value="2" name="package-slider">
               <span class="fill"></span>
               <span class="empty"></span>
             </div>
@@ -42,10 +42,10 @@
           <!-- billing -->
           <div class="billing-rate flex-row">
             <p>Monthly Billing</p>
-            <input type="checkbox" class="toggle" id="discount">
+            <input type="checkbox" class="toggle" id="discount" name="discount-toggle">
             <p>Yearly Billing</p>
-            <div class="discount-tag flex-row web">25% discount</div>
-            <div class="discount-tag flex-row mobile">-25%</div>
+            <label for="discount" class="discount-tag flex-row web">25% discount</label>
+            <label for="discount" class="discount-tag flex-row mobile">-25%</label>
           </div>
         </div>
         <div class="card-bottom flex-row">
